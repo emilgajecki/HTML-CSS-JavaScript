@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona o HTML</title>
+    <meta name="description" content="Podstawowe informacje o HTML, CSS i JS">
+    <meta name="keywords" content="html, css, javascript, sda, tarr">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="start_css.html">CSS</a>
+        <a href="start_js.html">JavaScript</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <H1>O stronie</H1>
+        <p>Strona z podstawowymi informacjami na temat HTML.</p>
+    </article>
+    <article>
+        <H1>Przykład listy numerowanej</H1>
+        <ol>
+            <li>Tytuł</li>
+            <li>Pragraf</li>
+            <li>Link</li>
+            <li>Lista</li>
+        </ol>
+        <h1>Przykład listy wypunktowanej</h1>
+        <ul>
+            <li>Artykuł</li>
+            <li>Sekcja</li>
+            <li>Nagłówek</li>
+            <li>Stopka</li>
+        </ul>
+    </article>
+    <article>
+        <h1>Element DIV</h1>
+        <div>
+            Blok DIV
+        </div>
+        <h1>Element span</h1>
+        <p>Paragraf
+            z elementem
+            <span>span</span>
+        </p>
+        <h1>Obrazek</h1>
+        aaaaa
+        <img width="200px"
+             src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png"
+             alt="Logo Java">
+        aaaa
+    </article>
+    <article>
+        <h1>Przykładowa tabela</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Kowalski</td>
+                <td>akowal@polo.pl</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ewa</td>
+                <td>Kowalska</td>
+                <td>ekowal@polo.pl</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Karol</td>
+                <td>Nowa</td>
+                <td>knowak@polo.pl</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4">Stopka tabeli</td>
+            </tr>
+            </tfoot>
+        </table>
+    </article>
+    <article>
+        <h1>Klasa <em>String</em></h1>
+        <p>Klasa <em>String</em> służy do tworzenia łańcuchów.</p>
+        <h2>Konkatenacja łańcuchów</h2>
+        <p>Lańcuchy łączymy za pomocą operatora <var>+</var>. Przykład skrótu <kbd>Alt P</kbd></p>
+        <pre>
+        <code>
+        String a = "ABCD";
+        String b = "EFGH";
+        System.out.println(a + b);
+        </code>
+        </pre>
+    </article>
+    <article>
+        <H1>Formularze</H1>
+        <h2>Przykład prostego formularza z metodą GET</h2>
+        <form action="index.html" method="get">
+            <fieldset>
+                <label for="user-name">Wpisz swoję imię</label><br>
+                <input type="text" id="user-name" name="user-name"><br>
+                <label for="user-email">Wpisz swój email</label><br>
+                <input type="email" id="user-email" name="user-email"><br>
+                <label for="user-password">Hasło</label><br>
+                <input type="password" name="user-password" id="user-password">
+            </fieldset>
+            <input type="submit" value="Zarejestruj">
+        </form>
+        <h2>Przykład formularza z metodą POST</h2>
+        <form action="index.html" method="post">
+            <fieldset>
+                <input type="password" name="password"><br>
+                <input type="submit" value="Zapisz">
+                <button type="reset">Wyczyść formularz</button>
+            </fieldset>
+        </form>
+        <h2>Formularz z select'em</h2>
+        <form action="index.html" method="get">
+            <select name="color"><br>
+                <option value="1">Czewony</option>
+                <option value="2">Zielony</option>
+                <option value="6">Czarny</option>
+            </select>
+            <input type="text" name="city" list="cities">
+            <datalist id="cities">
+                <option>Toruń</option>
+                <option>Bydgoszcz</option>
+                <option>Gdańsk</option>
+            </datalist>
+            <button type="submit">Wybierz</button>
+        </form>
+    </article>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
